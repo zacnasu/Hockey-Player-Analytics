@@ -20,6 +20,6 @@
 </ul>
 
 
-<h2>Reuse<h2>
+<h2>Reuse</h2>
 
 <p>When reusing the code, make sure to change the list of players as well as the threshold for the number of shifts for players to have together.  Each of these variables are global variables above main</p>
