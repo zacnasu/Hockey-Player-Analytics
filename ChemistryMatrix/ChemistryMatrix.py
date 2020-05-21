@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 #list containing jersey numbers of players in order
 rosterIndex = [3,5,6,7,8,11,12,14,15,16,17,18,19,21,22,23,27,71,88,91]
 
+#threshold of number of shifts for players to have together to count
+threshold = 20
 
 def main():
     team_size = len(rosterIndex)
@@ -54,7 +56,7 @@ def main():
     #caclulates Corsi for each pair of players
     for i in range(0,team_size):
         for j in range(0,team_size):
-            if shiftMatrix[i][j] > 20:
+            if shiftMatrix[i][j] > threshold:
                 corsiMatrix[i][j] = int(100*(shotAttemptsForMatrix[i][j]/(shotAttemptsAgainstMatrix[i][j]+shotAttemptsForMatrix[i][j])))
             else:
                 corsiMatrix[i][j] = None

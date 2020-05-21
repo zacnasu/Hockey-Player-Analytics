@@ -4,7 +4,7 @@
 
 <h2>Input</h2>
 
-<p>To run this program the suggested command is "./ChemistryMatrix.py *.txt"<p>
+<p>To run this program the suggested command is "python3 ChemistryMatrix.py data/*.txt"<p>
 
 <p>Each line of each text file is formatted as such: (player1 | player2 | player3 | player4 | player5 | Shots on Goal for | Missed Shots for | Scoring Opportunities for | Shots on Goal Against | Missed Shots Against | Scoring Opportunities Against) </p>
 
@@ -18,3 +18,8 @@
 <li>Matrix with isolated impact</li>
 <li>List of ordered pairwise isolated impact between players</li>
 </ul>
+
+
+<h2>Reuse<h2>
+
+<p>When reusing the code, make sure to change the list of players as well as the threshold for the number of shifts for players to have together.  Each of these variables are global variables above main</p>
